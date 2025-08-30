@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Year Trading Data Analysis - Comprehensive Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #2E86AB 0%, #A23B72 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 300;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px;
+        }
+        .chart-section {
+            margin-bottom: 50px;
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .chart-title {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 20px 25px;
+            margin: 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 1.5em;
+            color: #2E86AB;
+            font-weight: 600;
+        }
+        .chart-container {
+            padding: 25px;
+            text-align: center;
+        }
+        .chart-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .description {
+            margin-top: 20px;
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: left;
+            padding: 0 10px;
+        }
+        .summary {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border-left: 5px solid #2E86AB;
+        }
+        .summary h2 {
+            color: #2E86AB;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        .summary ul {
+            padding-left: 25px;
+        }
+        .summary li {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        .footer {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            text-align: center;
+            color: #555;
+            border-top: 1px solid #e0e0e0;
+        }
+        .tech-info {
+            background: linear-gradient(135deg, #e8f4fd 0%, #d1ecf1 100%);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border-left: 5px solid #2E86AB;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 5px solid #ffc107;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .feature-card h3 {
+            color: #2E86AB;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 5-Year Trading Data Analysis</h1>
+            <p>Comprehensive Long-term Market Analysis with Advanced Technical Indicators</p>
+            <p><strong>Symbol:</strong> AAPL | <strong>Period:</strong> 5 Years | <strong>Data:</strong> Sample Data (Demo)</p>
+        </div>
+        
+        <div class="content">
+            <div class="tech-info">
+                <strong>💡 Enhanced Analysis:</strong> This 5-year analysis provides much deeper insights than shorter timeframes. 
+                You can see long-term trends, major market cycles, and the power of long-term moving averages like the 200-day SMA.
+            </div>
+            
+            <div class="highlight-box">
+                <h3>🚀 Key Advantages of 5-Year Analysis</h3>
+                <ul>
+                    <li><strong>Long-term Trends:</strong> Identify major market cycles and secular trends</li>
+                    <li><strong>200-day SMA:</strong> Industry standard for long-term trend analysis</li>
+                    <li><strong>Golden/Death Cross:</strong> Spot major trend reversals with 50/200 SMA crossovers</li>
+                    <li><strong>Market Cycles:</strong> See complete bull/bear market cycles</li>
+                    <li><strong>Volatility Patterns:</strong> Understand long-term volatility characteristics</li>
+                </ul>
+            </div>
+            
+            <div class="summary">
+                <h2>🎯 What This 5-Year Report Shows</h2>
+                <ul>
+                    <li><strong>Extended Price History:</strong> 5 years of daily price movements with volume analysis</li>
+                    <li><strong>Advanced Technical Indicators:</strong> 20+ professional indicators including 200-day SMA, 50-day EMA</li>
+                    <li><strong>Long-term Trend Analysis:</strong> Moving averages for different time horizons (20, 50, 200 days)</li>
+                    <li><strong>Market Cycle Analysis:</strong> Identify bull markets, bear markets, and consolidation periods</li>
+                    <li><strong>Golden/Death Cross Detection:</strong> Major trend reversal signals using 50/200 SMA crossovers</li>
+                    <li><strong>Enhanced Performance Metrics:</strong> 5-year returns, volatility analysis, and statistical distributions</li>
+                </ul>
+            </div>
+            
+            <div class="chart-section">
+                <h3 class="chart-title">📈 5-Year Price and Volume Analysis</h3>
+                <div class="chart-container">
+                    <img src="generated_charts_5year/AAPL_5year_price_volume_chart.png" alt="5-Year Price and Volume Chart">
+                    <div class="description">
+                        <strong>Extended Timeframe Benefits:</strong> This 5-year chart reveals major market cycles, long-term trends, and significant price movements that aren't visible in shorter timeframes. 
+                        The volume analysis shows how trading activity has evolved over multiple years, helping identify periods of high and low market participation.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chart-section">
+                <h3 class="chart-title">🕯️ 5-Year Candlestick Chart</h3>
+                <div class="chart-container">
+                    <img src="generated_charts_5year/AAPL_5year_candlestick_chart.png" alt="5-Year Candlestick Chart">
+                    <div class="description">
+                        <strong>Pattern Recognition:</strong> Over 5 years, you can identify major chart patterns, support/resistance levels, and price consolidation zones. 
+                        This extended view helps traders understand the broader market context and make more informed decisions about entry and exit points.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chart-section">
+                <h3 class="chart-title">🔧 5-Year Technical Analysis Dashboard</h3>
+                <div class="chart-container">
+                    <img src="generated_charts_5year/AAPL_5year_technical_dashboard.png" alt="5-Year Technical Analysis Dashboard">
+                    <div class="description">
+                        <strong>Multi-Timeframe Analysis:</strong> This comprehensive dashboard shows price with multiple moving averages (SMA 20, 50, 200 and EMA 12, 26, 50), 
+                        Bollinger Bands for volatility, RSI for momentum, MACD for trend confirmation, and a dedicated 200-day SMA analysis panel. 
+                        The 200-day SMA is crucial for identifying long-term bull/bear markets.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chart-section">
+                <h3 class="chart-title">📊 5-Year Stochastic Oscillator</h3>
+                <div class="chart-container">
+                    <img src="generated_charts_5year/AAPL_5year_stochastic_oscillator.png" alt="5-Year Stochastic Oscillator">
+                    <div class="description">
+                        <strong>Extended Momentum Analysis:</strong> The 5-year stochastic oscillator reveals long-term momentum patterns and helps identify major overbought/oversold cycles. 
+                        This extended view shows how momentum indicators behave during different market phases and can help predict major trend reversals.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chart-section">
+                <h3 class="chart-title">🎯 Long-term Trend Analysis & Golden/Death Cross</h3>
+                <div class="chart-container">
+                    <img src="generated_charts_5year/AAPL_5year_trend_analysis.png" alt="5-Year Trend Analysis">
+                    <div class="description">
+                        <strong>Major Trend Signals:</strong> This chart highlights periods above/below the 200-day SMA (long-term trend indicator) and identifies Golden Cross (bullish) and Death Cross (bearish) signals. 
+                        The 200-day SMA is widely used by institutional investors and can signal major market shifts. Golden Crosses occur when the 50-day SMA crosses above the 200-day SMA, Death Crosses when it crosses below.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chart-section">
+                <h3 class="chart-title">📋 5-Year Summary Dashboard</h3>
+                <div class="chart-container">
+                    <img src="generated_charts_5year/AAPL_5year_summary_dashboard.png" alt="5-Year Summary Dashboard">
+                    <div class="description">
+                        <strong>Comprehensive Metrics:</strong> Four-panel summary showing 5-year cumulative returns, volume distribution patterns, RSI distribution over the extended period, and MACD histogram evolution. 
+                        This provides a complete overview of market performance, volatility characteristics, and indicator behavior over multiple market cycles.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>📈 200-Day SMA</h3>
+                    <p>The 200-day Simple Moving Average is the gold standard for long-term trend analysis. When price is above the 200-day SMA, it's generally considered a bull market. When below, it's a bear market.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔄 Golden Cross</h3>
+                    <p>A Golden Cross occurs when the 50-day SMA crosses above the 200-day SMA. This is a major bullish signal that often precedes significant upward moves and is widely followed by institutional investors.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📉 Death Cross</h3>
+                    <p>A Death Cross happens when the 50-day SMA crosses below the 200-day SMA. This is a major bearish signal that often precedes significant downward moves and can indicate the start of a bear market.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Market Cycles</h3>
+                    <p>5-year analysis reveals complete market cycles including bull markets, bear markets, and consolidation periods. This helps traders understand where we are in the current cycle and what to expect next.</p>
+                </div>
+            </div>
+            
+            <div class="summary">
+                <h2>🚀 Enhanced Features for 5-Year Analysis</h2>
+                <ul>
+                    <li><strong>Extended Moving Averages:</strong> Added 200-day SMA and 50-day EMA for long-term trend analysis</li>
+                    <li><strong>Golden/Death Cross Detection:</strong> Automatic identification of major trend reversal signals</li>
+                    <li><strong>Long-term Trend Visualization:</strong> Clear visualization of bull/bear market periods</li>
+                    <li><strong>Enhanced Statistical Analysis:</strong> 5-year distributions and performance metrics</li>
+                    <li><strong>Market Cycle Identification:</strong> Tools to identify major market phases</li>
+                    <li><strong>Professional Chart Sizing:</strong> Larger charts optimized for extended timeframes</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Built with ❤️ using Python, NumPy, Matplotlib, and Yahoo Finance</strong></p>
+            <p>This 5-year analysis system provides institutional-grade insights for professional trading and investment decisions</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Yahoo Finance Configuration (Optional)
+# Copy this file to .env for custom settings
+
+# Default instrument for analysis (optional)
+DEFAULT_INSTRUMENT=AAPL
+
+# Default timeframe for analysis (optional)
+DEFAULT_GRANULARITY=1d
+
+# Note: Yahoo Finance is completely free and doesn't require API keys!
+# This file is only for customizing default settings.
