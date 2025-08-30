@@ -5,6 +5,7 @@ env/
 
 # Python dependencies
 requirements.txt
+requirements.txt.backup
 *.py
 __pycache__/
 *.pyc
