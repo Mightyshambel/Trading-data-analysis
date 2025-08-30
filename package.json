@@ -1,0 +1,30 @@
+{
+  "name": "trading-data-analysis-system",
+  "version": "1.0.0",
+  "description": "Professional-grade trading data analysis system with Yahoo Finance integration",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build required'",
+    "start": "echo 'Static site - open index.html in browser'"
+  },
+  "keywords": [
+    "trading",
+    "finance",
+    "analysis",
+    "yahoo-finance",
+    "technical-indicators",
+    "python",
+    "numpy",
+    "matplotlib"
+  ],
+  "author": "The Almighty",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mightyshambel/Trading-data-analysis.git"
+  },
+  "homepage": "https://github.com/Mightyshambel/Trading-data-analysis#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

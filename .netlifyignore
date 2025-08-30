@@ -1,0 +1,77 @@
+# Python virtual environment
+venv/
+env/
+.venv/
+
+# Python dependencies
+requirements.txt
+*.py
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Generated charts (not needed for static site)
+generated_charts/
+generated_charts_5year/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Demo scripts
+demo_*.py
+test_*.py
+
+# Source code (not needed for static site)
+src/
