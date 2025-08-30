@@ -225,4 +225,4 @@ You now have a **professional-grade trading data analysis system** that rivals c
 
 ---
 
-*Built with ❤️ using Python, NumPy, and Yahoo Finance*
+*Built  using Python, NumPy, and Yahoo Finance*
