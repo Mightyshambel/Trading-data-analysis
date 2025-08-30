@@ -1,3 +1,0 @@
-# This is a static HTML site, not a Python application
-# Netlify should not attempt to install Python dependencies
-static

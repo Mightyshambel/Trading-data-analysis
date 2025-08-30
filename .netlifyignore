@@ -3,13 +3,13 @@ venv/
 env/
 .venv/
 
-# Python dependencies
-requirements.txt
-requirements.txt.backup
-*.py
-__pycache__/
+# Python dependencies (removed from repository)
+# requirements.txt
+# requirements.txt.backup
+# *.py
+# __pycache__/
 # Force ignore all Python-related content
-src/
+# src/
 venv/
 env/
 .venv/
