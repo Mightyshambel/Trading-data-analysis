@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Almighty - Trading Data Analysis System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        .header h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.8;
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .hero-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .hero-section h2 {
+            color: #2E86AB;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .hero-section p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #2E86AB;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .feature-card h3 {
+            color: #2E86AB;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .reports-section {
+            margin: 50px 0;
+        }
+        
+        .reports-section h2 {
+            color: #2E86AB;
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .reports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+        
+        .report-card {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #e0e0e0;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .report-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .report-card h3 {
+            color: #856404;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        
+        .report-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #2E86AB 0%, #A23B72 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .tech-stack {
+            background: linear-gradient(135deg, #e8f4fd 0%, #d1ecf1 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            border-left: 5px solid #2E86AB;
+        }
+        
+        .tech-stack h2 {
+            color: #2E86AB;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .tech-item {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            color: #2E86AB;
+            font-weight: 600;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 30px;
+        }
+        
+        .footer p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+        .copyright {
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #9B5DE5;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .main-content {
+                padding: 25px;
+            }
+            
+            .reports-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 The Almighty</h1>
+            <p>Trading Data Analysis System</p>
+            <p class="subtitle">Professional-Grade Financial Analysis with Yahoo Finance & Python</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="hero-section">
+                <h2>📊 Advanced Trading Analysis Platform</h2>
+                <p>
+                    A comprehensive, institutional-grade trading data analysis system that provides professional insights 
+                    for stocks, forex, crypto, commodities, and indices. Built with cutting-edge Python technologies 
+                    and powered by Yahoo Finance data.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🎯 Multi-Asset Support</h3>
+                    <p>Analyze stocks, ETFs, forex pairs, cryptocurrencies, commodities, and market indices with a single unified system.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📈 20+ Technical Indicators</h3>
+                    <p>Professional indicators including SMA, EMA, RSI, MACD, Bollinger Bands, Stochastic Oscillator, and more.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>⏰ Flexible Timeframes</h3>
+                    <p>Support for 1 year to 10+ years of data with daily, weekly, and monthly intervals for comprehensive analysis.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🔍 Advanced Analysis</h3>
+                    <p>Golden/Death Cross detection, long-term trend analysis, and institutional-grade charting capabilities.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>📊 Professional Charts</h3>
+                    <p>Publication-quality visualizations with customizable styling, perfect for reports and presentations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>🛡️ Reliable Fallbacks</h3>
+                    <p>Sample data generation ensures the system works even when external APIs are unavailable.</p>
+                </div>
+            </div>
+            
+            <div class="tech-stack">
+                <h2>🛠️ Technology Stack</h2>
+                <div class="tech-list">
+                    <div class="tech-item">Python 3.9+</div>
+                    <div class="tech-item">NumPy</div>
+                    <div class="tech-item">Pandas</div>
+                    <div class="tech-item">Matplotlib</div>
+                    <div class="tech-item">Seaborn</div>
+                    <div class="tech-item">yfinance</div>
+                    <div class="tech-item">scikit-learn</div>
+                    <div class="tech-item">Jupyter</div>
+                </div>
+            </div>
+            
+            <div class="reports-section">
+                <h2>📋 Live Analysis Reports</h2>
+                <div class="reports-grid">
+                    <div class="report-card">
+                        <h3>📈 1-Year Analysis Report</h3>
+                        <p>Comprehensive 1-year market analysis with technical indicators, price charts, and performance metrics.</p>
+                        <a href="charts_report.html" class="btn">View Report</a>
+                    </div>
+                    
+                    <div class="report-card">
+                        <h3>🚀 5-Year Analysis Report</h3>
+                        <p>Advanced 5-year analysis featuring long-term trends, Golden/Death Cross detection, and institutional insights.</p>
+                        <a href="charts_report_5year.html" class="btn">View Report</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature-card" style="text-align: center; margin-top: 40px;">
+                <h3>🌐 GitHub Repository</h3>
+                <p>View the complete source code, documentation, and contribute to the project on GitHub.</p>
+                <a href="https://github.com/Mightyshambel/Trading-data-analysis" class="btn" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Built using Python, NumPy, Matplotlib, and Yahoo Finance</strong></p>
+            <p>Professional-grade trading data analysis system for institutional and retail traders</p>
+            <p class="copyright">© 2025 The Almighty</p>
+        </div>
+    </div>
+</body>
+</html>
