@@ -8,6 +8,11 @@ requirements.txt
 requirements.txt.backup
 *.py
 __pycache__/
+# Force ignore all Python-related content
+src/
+venv/
+env/
+.venv/
 *.pyc
 *.pyo
 *.pyd
