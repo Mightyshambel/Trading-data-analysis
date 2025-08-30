@@ -23,9 +23,10 @@ This guide will help you deploy your Trading Data Analysis System to Netlify, ma
 
 ### 3. **Configure Build Settings**
 Netlify will automatically detect the settings from `netlify.toml`:
-- **Build command**: `echo 'Static site - no build required'`
+- **Build command**: `npm run build` (Node.js static site)
 - **Publish directory**: `.` (root directory)
 - **Node version**: 18
+- **Build environment**: Configured as Node.js project to avoid Python dependency issues
 
 ### 4. **Customize Site Settings**
 - **Site name**: Choose a custom subdomain (e.g., `your-trading-system.netlify.app`)
@@ -123,6 +124,13 @@ Edit the features grid in `index.html` to highlight different aspects of your sy
 - Check that all files are committed to GitHub
 - Verify `netlify.toml` syntax
 - Check Netlify build logs for errors
+
+### **Python Dependency Errors**
+If you see errors like `AttributeError: module 'pkgutil' has no attribute 'ImpImporter'`:
+- This is now fixed with the `.netlifyignore` file
+- The site is configured as a Node.js static site
+- Python dependencies are excluded from the build process
+- No Python installation is required for deployment
 
 ### **Missing Files**
 - Ensure all HTML files are in the root directory
