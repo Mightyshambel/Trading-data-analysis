@@ -4,8 +4,8 @@ env/
 .venv/
 
 # Generated Charts and Reports
-generated_charts/
-generated_charts_5year/
+# generated_charts/          # Include for Netlify deployment
+# generated_charts_5year/   # Include for Netlify deployment
 *.png
 *.jpg
 *.jpeg

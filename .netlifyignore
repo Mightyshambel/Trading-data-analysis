@@ -13,6 +13,10 @@ env/
 venv/
 env/
 .venv/
+
+# Include chart directories for Netlify deployment
+# generated_charts/
+# generated_charts_5year/
 *.pyc
 *.pyo
 *.pyd
