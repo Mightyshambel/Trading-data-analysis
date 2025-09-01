@@ -92,10 +92,7 @@ We welcome contributions in these areas:
    pip install -r requirements-dev.txt  # Development dependencies
    ```
 
-4. **Install pre-commit hooks**:
-   ```bash
-   pre-commit install
-   ```
+
 
 ### Development Dependencies
 
@@ -110,7 +107,7 @@ isort>=5.12.0
 bandit>=1.7.0
 safety>=2.3.0
 pydocstyle>=6.3.0
-pre-commit>=3.0.0
+
 ```
 
 ## 📝 Coding Standards
@@ -150,34 +147,22 @@ bandit -r src/
 pydocstyle src/
 ```
 
-### Pre-commit Configuration
+### Code Quality Tools
 
-Create `.pre-commit-config.yaml`:
+You can run these tools manually:
 
-```yaml
-repos:
-  - repo: https://github.com/psf/black
-    rev: 23.3.0
-    hooks:
-      - id: black
-        language_version: python3
+```bash
+# Format code
+black src/ tests/
 
-  - repo: https://github.com/pycqa/isort
-    rev: 5.12.0
-    hooks:
-      - id: isort
+# Sort imports
+isort src/ tests/
 
-  - repo: https://github.com/pycqa/flake8
-    rev: 6.0.0
-    hooks:
-      - id: flake8
-        args: [--max-line-length=88]
+# Lint code
+flake8 src/ tests/
 
-  - repo: https://github.com/pycqa/bandit
-    rev: 1.7.0
-    hooks:
-      - id: bandit
-        args: [-r, src/]
+# Security scan
+bandit -r src/
 ```
 
 ## 🧪 Testing Guidelines
@@ -332,11 +317,10 @@ Any additional information
 
 ### Review Process
 
-1. **Automated checks** must pass
-2. **Code review** by maintainers
-3. **Address feedback** and make changes
-4. **Maintainer approval** required
-5. **Merge to main branch**
+1. **Manual code review** by maintainers
+2. **Address feedback** and make changes
+3. **Maintainer approval** required
+4. **Merge to main branch**
 
 ## 🚀 Release Process
 
@@ -355,7 +339,6 @@ We use **Semantic Versioning** (SemVer):
 - [ ] **Run full test suite**
 - [ ] **Update documentation**
 - [ ] **Create release tag**
-- [ ] **Deploy to PyPI** (if applicable)
 
 ### Creating a Release
 

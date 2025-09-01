@@ -2,8 +2,6 @@
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://github.com/Mightyshambel/Trading-data-analysis/workflows/CI/badge.svg)](https://github.com/Mightyshambel/Trading-data-analysis/actions)
-[![Coverage](https://codecov.io/gh/Mightyshambel/Trading-data-analysis/branch/main/graph/badge.svg)](https://codecov.io/gh/Mightyshambel/Trading-data-analysis)
 
 A comprehensive, production-ready trading data analysis system built with Python, Yahoo Finance API, and NumPy for market analysis, backtesting, and strategy development across stocks, forex, crypto, and commodities.
 
@@ -22,7 +20,7 @@ A comprehensive, production-ready trading data analysis system built with Python
 - 🎯 **Trading Strategies**: Pre-built strategies with backtesting framework
 - 🛡️ **Risk Management**: Position sizing and risk calculation tools
 - 📓 **Jupyter Notebooks**: Interactive analysis and development environment
-- 🧪 **Comprehensive Testing**: 80%+ test coverage with automated CI/CD
+- 🧪 **Comprehensive Testing**: 80%+ test coverage with manual testing
 
 ## 🚀 Quick Start
 
@@ -241,7 +239,7 @@ Trading-data-analysis/
 ├── notebooks/                    # Jupyter notebooks
 ├── data/                        # Data storage
 ├── generated_charts/            # Generated visualizations
-├── .github/workflows/           # CI/CD configuration
+
 ├── requirements.txt             # Python dependencies
 ├── CONTRIBUTING.md              # Contribution guidelines
 └── README.md                    # This file
@@ -262,14 +260,14 @@ pytest --cov=src --cov-report=html
 pytest tests/test_yfinance_client.py
 ```
 
-## 🚀 CI/CD Pipeline
+## 🧪 Testing
 
-The project includes automated CI/CD with:
+The project includes comprehensive testing:
 
-- ✅ **Automated Testing** - Runs on every commit
-- ✅ **Code Quality Checks** - Linting, formatting, security scanning
-- ✅ **Coverage Reports** - Track test coverage
-- ✅ **Automated Deployment** - Deploy to Netlify on main branch
+- ✅ **Unit Tests** - Test individual functions and classes
+- ✅ **Integration Tests** - Test component interactions
+- ✅ **Manual Testing** - Run tests locally with pytest
+- ✅ **Code Quality** - Use development tools for quality checks
 
 ## 🤝 Contributing
 
@@ -280,7 +278,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 1. **Fork the repository**
 2. **Create a feature branch**: `git checkout -b feature/amazing-feature`
 3. **Make your changes** following our coding standards
-4. **Run tests**: `pytest`
+4. **Run tests locally**: `pytest`
 5. **Submit a pull request**
 
 ## 📚 Documentation
@@ -288,7 +286,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 - **[Quick Start Guide](QUICKSTART.md)** - Get started in 5 minutes
 - **[Project Summary](PROJECT_SUMMARY.md)** - Comprehensive project overview
 - **[Contributing Guidelines](CONTRIBUTING.md)** - How to contribute
-- **[Netlify Deployment](NETLIFY_DEPLOYMENT.md)** - Deployment guide
+
 
 ## 📄 License
 
