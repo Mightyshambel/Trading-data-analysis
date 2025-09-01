@@ -287,11 +287,6 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 - **[Project Summary](PROJECT_SUMMARY.md)** - Comprehensive project overview
 - **[Contributing Guidelines](CONTRIBUTING.md)** - How to contribute
 
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## ⚠️ Disclaimer
 
 This software is for **educational and research purposes only**. Trading involves substantial risk and is not suitable for all investors. Past performance does not guarantee future results. Always do your own research and use proper risk management.
@@ -303,9 +298,10 @@ This software is for **educational and research purposes only**. Trading involve
 - **Matplotlib** and **Plotly** for data visualization
 - **The open-source community** for inspiration and support
 
+
 ---
 
-**Built with ❤️ by The Almighty**
+**Built by The Almighty**
 
 [![GitHub stars](https://img.shields.io/github/stars/Mightyshambel/Trading-data-analysis?style=social)](https://github.com/Mightyshambel/Trading-data-analysis/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Mightyshambel/Trading-data-analysis?style=social)](https://github.com/Mightyshambel/Trading-data-analysis/network)
